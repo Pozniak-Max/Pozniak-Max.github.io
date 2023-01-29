@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  background: hsl(27, 66%, 92%);
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background: hsl(10, 79%, 65%);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.head-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header img {
+  width: 50px;
+}
+.header h6 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+.header p {
+  font-size: 19px;
+  color: #fff;
+  font-weight: 700;
+}
+canvas {
+  background: #fff;
+  width: auto;
+  height: 200px;
+  padding: 10px;
+
+  overflow: unset;
+  object-fit: contain;
+}
+.container {
+  display: flex;
+  height: auto;
+  gap: 80px;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  padding: 0px;
+  background: #fff;
+  flex-direction: column;
+  border-radius: 12px;
+}
+.content h6 {
+  color: rgb(163, 163, 163);
+  margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 12px;
+}
+.content p {
+  color: hsl(25, 47%, 15%);
+  font-size: 23px;
+  font-weight: 700;
+}
+.content .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+hr {
+  width: 80%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 5px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px 20px;
+  background: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.foot-2 h6 {
+  font-size: 16px;
+  color: hsl(25, 47%, 15%);
+
+  font-weight: 700;
+}
+.foot-2 p {
+  font-size: 11px;
+  color: rgb(163, 163, 163);
+  margin-top: 5px;
+  font-weight: 100;
+}
+@media (max-width: 870px) {
+  .container {
+    max-width: 300px;
+    margin: 20px;
+  }
+  .content {
+    max-width: 300px;
+  }
+}
